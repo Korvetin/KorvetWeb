@@ -1,0 +1,132 @@
+/* === Base Layout === */
+.offers-page {
+    background-color: #0a0a0a;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+}
+
+/* === Hero Section === */
+.offers-hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 46, 46, 0.2);
+}
+
+.offers-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff2e2e, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.offers-hero p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 1rem;
+}
+
+/* === Offer Cards Grid === */
+.offers-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.8rem;
+    margin: 3rem auto;
+    max-width: 1100px;
+}
+
+/* === Each Offer Card === */
+.offer-card {
+    background-color: #121212;
+    padding: 1.8rem;
+    border-radius: 14px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 0 12px rgba(255, 46, 46, 0.15);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.offer-card:hover {
+    border-color: #ff2e2e;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 18px rgba(255, 46, 46, 0.3);
+}
+
+.offer-icon {
+    margin-bottom: 1rem;
+    color: #ff2e2e;
+}
+
+.offer-card h3 {
+    margin-bottom: 0.6rem;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.offer-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+/* === Apply Button on Each Card === */
+.apply-button {
+    margin-top: 1rem;
+    background: transparent;
+    border: 2px solid #ff2e2e;
+    color: #ff2e2e;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #ff2e2e;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 46, 46, 0.4);
+}
+
+/* === Footer Section (CTA) === */
+.offers-footer {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 3rem 1rem;
+    background: #000000;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(255, 46, 46, 0.2);
+}
+
+.offers-footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #e70000;
+}
+
+.offers-footer p {
+    color: #fef9f9;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* === CTA Button (Final Section) === */
+.cta-button {
+    background-color: #ff2e2e;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 46, 46, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #e6001f;
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.4);
+}

@@ -1,0 +1,87 @@
+.service-detail-page {
+  background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+  color: white;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.service-detail-hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.detail-icon {
+  background-color: #ff2e2e;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.service-detail-hero h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #ff2e2e, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.service-detail-hero p {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.service-detail-content {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #121212;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(255, 46, 46, 0.1);
+  border: 1px solid #2a2a2a;
+}
+
+.service-detail-content h2 {
+  color: #ff2e2e;
+  margin-bottom: 0.6rem;
+}
+
+.service-detail-content ul {
+  margin: 1rem 0 2rem;
+  padding-left: 1rem;
+}
+
+.service-detail-content li {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #eee;
+}
+
+.service-detail-content p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detail-cta {
+  background-color: #ff2e2e;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 46, 46, 0.3);
+}
+
+.detail-cta:hover {
+  background-color: #e6001f;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.4);
+}

@@ -1,0 +1,22 @@
+.cta-section {
+  background-color: #0a0a0a;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-btn {
+  background-color: #ff2e2e;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #f00625;
+}

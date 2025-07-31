@@ -1,0 +1,70 @@
+:root {
+  --font-main: 'Segoe UI', system-ui, sans-serif;
+  --color-bg: #0a0a0a;
+  --color-light: #ffffff;
+  --color-muted: #cccccc;
+  --color-accent: #ff2e2e;
+
+  font-family: var(--font-main);
+  color: var(--color-light);
+  background-color: var(--color-bg);
+
+  font-weight: 400;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-light);
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+button {
+  font-family: inherit;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 0.6em 1.4em;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6001f;
+}
+
+code {
+  background-color: #1a1a1a;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  color: #ffaaaa;
+}
+
+/* Optional container class for global layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}

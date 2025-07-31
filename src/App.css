@@ -1,0 +1,42 @@
+.app-container {
+  background-color: #0a0a0a;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section h1 span {
+  color: #ff2e2e;
+}
+
+.hero-section p {
+  color: #cccccc;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.app-container {
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.bg-dark {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.bg-light {
+  background-color: #ffffff;
+  color: #111;
+}
+

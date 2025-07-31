@@ -1,0 +1,99 @@
+.services-section {
+  padding: 80px 40px 60px;
+  background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+  text-align: center;
+  color: #fff;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f30707, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.services-heading p {
+  font-size: 1.1rem;
+  color: #ad9393;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 1rem auto 2rem;
+}
+
+.services-flyout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.service-card {
+  background-color: #1c1c1c;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 1px solid #b80101;
+  box-shadow: 0 8px 24px rgba(255, 46, 46, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  min-height: 200px;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  background-color: #222;
+  border-color: #ff2e2e;
+  box-shadow: 0 0 15px rgba(255, 46, 46, 0.2);
+  cursor: pointer;
+}
+
+.service-card span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  gap: 8px;
+}
+
+.service-card span svg {
+  font-size: 32px;
+  color: #ff2e2e;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .services-section h2 {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+    min-height: 160px;
+    font-size: 0.95rem;
+  }
+
+  .service-card span svg {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    min-height: 140px;
+    font-size: 0.85rem;
+  }
+
+  .service-card span svg {
+    font-size: 24px;
+  }
+}

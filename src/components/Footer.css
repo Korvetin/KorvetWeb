@@ -1,0 +1,77 @@
+/* Footer.css */
+
+.footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 2rem 1rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  color: #ff2e2e;
+  margin-bottom: 0.5rem;
+}
+
+.footer h3 {
+  color: #ff2e2e;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  color: #ccc;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.footer-address,
+.footer-links,
+.footer-social {
+  max-width: 250px;
+}
+
+.footer-address p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #ff2e2e;
+}
+
+.footer-links svg,
+.footer-social svg,
+.footer-address svg {
+  margin-right: 8px;
+  color: #ff2e2e;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #222;
+  color: #aaa;
+  font-size: 0.9rem;
+}

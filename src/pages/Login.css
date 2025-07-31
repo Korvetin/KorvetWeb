@@ -1,0 +1,133 @@
+/* === Page Container === */
+.login-page {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Main Card === */
+.login-box {
+  background-color: #121212;
+  padding: 3rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 0 24px rgba(255, 46, 46, 0.25);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* === Toggle Tabs === */
+.toggle-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.toggle-tabs button {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  background: #1e1e1e;
+  color: #ccc;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+.toggle-tabs button.active {
+  color: #ff2e2e;
+  border-color: #ff2e2e;
+  background-color: #222;
+}
+
+/* === Headings === */
+.login-box h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+.login-box p {
+  color: #cccccc;
+  margin-bottom: 1.8rem;
+  font-size: 0.95rem;
+}
+
+/* === Input Fields === */
+.login-box input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+.login-box input:focus {
+  border-color: #ff2e2e;
+  outline: none;
+}
+
+/* === Submit Button === */
+.login-box button[type="submit"] {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff2e2e;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.login-box button[type="submit"]:hover {
+  background-color: #e6001f;
+  box-shadow: 0 0 10px rgba(255, 46, 46, 0.5);
+}
+
+/* === Divider === */
+.divider {
+  color: #777;
+  margin: 1.5rem 0 1rem;
+  font-size: 0.85rem;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #333;
+}
+.divider::before {
+  left: 0;
+}
+.divider::after {
+  right: 0;
+}
+
+/* === Social Icons === */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.social-icons .icon {
+  color: #ff2e2e;
+  background-color: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social-icons .icon:hover {
+  background-color: #ff2e2e;
+  color: white;
+}

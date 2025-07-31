@@ -1,0 +1,115 @@
+/* File: src/pages/contactpage.css */
+
+.contact-page {
+    background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 3rem 1rem;
+    overflow-x: hidden;
+}
+
+.contact-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #ff2e2e, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.contact-hero p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 0.8rem;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/* Left: Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.info-item .icon {
+    font-size: 1.6rem;
+    color: #ff2e2e;
+}
+
+.info-item h4 {
+    margin: 0 0 4px;
+    color: #ff2e2e;
+}
+
+.info-item p {
+    margin: 0;
+    color: #ccc;
+}
+
+/* Right: Form */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff2e2e;
+}
+
+.contact-form button {
+    background: #ff2e2e;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background: #e6001f;
+    box-shadow: 0 0 12px rgba(255, 46, 46, 0.4);
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,147 @@
+/* === Base Layout === */
+.services-page {
+    background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+}
+
+/* === HERO SECTION (Matching Insights Style) === */
+.services-hero-section {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.services-hero-icon {
+    font-size: 2.5rem;
+    color: #ff2e2e;
+    margin-bottom: 0.5rem;
+}
+
+.services-hero-heading {
+    font-size: 2.6rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff2e2e, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.8rem;
+}
+
+.services-hero-subtext {
+    font-size: 1.05rem;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* === Service Cards Grid (Insight Style) === */
+.services-insight-style {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 2rem auto 4rem;
+}
+
+/* === Individual Card === */
+.insight-card {
+    background-color: #111;
+    border-radius: 18px;
+    padding: 2rem 1rem;
+    text-align: center;
+    border: 1px solid #2e2e2e;
+    box-shadow: 0 0 10px rgba(255, 46, 46, 0.1);
+    transition: all 0.3s ease;
+}
+
+.insight-card:hover {
+    box-shadow: 0 0 18px rgba(255, 46, 46, 0.3);
+    border-color: #ff2e2e;
+}
+
+.insight-icon {
+    background-color: #ff2e2e;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.insight-card h3 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.insight-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* === Know More Button === */
+.know-more-button {
+    margin-top: 1rem;
+    background: transparent;
+    border: 2px solid #ff2e2e;
+    color: #ff2e2e;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.85rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.know-more-button:hover {
+    background-color: #ff2e2e;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 46, 46, 0.4);
+}
+
+/* === Footer CTA Section === */
+.services-footer-cta {
+    background: radial-gradient(circle, #ff2e2e20, #0a0a0a);
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-top: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 46, 46, 0.1);
+}
+
+.services-footer-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff2e2e;
+}
+
+.services-footer-cta p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+/* === Final CTA Button === */
+.cta-button {
+    background-color: #ff2e2e;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 46, 46, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #e6001f;
+    box-shadow: 0 0 14px rgba(255, 46, 46, 0.4);
+}
