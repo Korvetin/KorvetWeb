@@ -5,7 +5,7 @@ import Slider from "../components/slider";
 import WhyChooseUs from "../components/WhyChooseUs";
 
 import CTASection from "../components/CTASection";
-import VideoSection from "../components/Video";
+import VideoSection from "../components/video";
 import { motion } from "framer-motion";
 import "../App.css";
 
