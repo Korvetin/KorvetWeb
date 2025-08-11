@@ -24,9 +24,6 @@ function Slider() {
   return (
     <section className="slider">
       <img src={images[index]} alt="slider" className="slider-img" />
-      <button className="get-started-slider" onClick={handleLoginClick}>
-        LOGIN
-      </button>
     </section>
   );
 }

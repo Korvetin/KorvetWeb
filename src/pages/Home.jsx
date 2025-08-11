@@ -3,7 +3,7 @@
 import React from "react";
 import Slider from "../components/slider";
 import WhyChooseUs from "../components/WhyChooseUs";
-import Services from "../components/Services";
+
 import CTASection from "../components/CTASection";
 import VideoSection from "../components/Video";
 import { motion } from "framer-motion";
@@ -29,14 +29,7 @@ function Home() {
         <WhyChooseUs />
       </motion.div>
 
-      <motion.div
-        whileInView={{ opacity: 1, rotateY: 0 }}
-        initial={{ opacity: 0, rotateY: -90 }}
-        transition={{ duration: 1 }}
-        style={{ margin: "50px 0" }}
-      >
-        <Services />
-      </motion.div>
+    
 
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}

@@ -1,7 +1,5 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-/* Reset defaults */
 * {
   margin: 0;
   padding: 0;
@@ -9,23 +7,25 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
-/* Navbar wrapper */
+/* Apple Glass Effect Navbar */
 .navbar {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #0a0a0a;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08); /* transparent white */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   z-index: 1000;
 }
 
 /* Navbar container */
 .navbar-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  justify-content: space-between;
+  padding: 12px 28px;
   max-width: 1200px;
   margin: auto;
 }
@@ -35,28 +35,28 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  text-decoration: none;
 }
-
 .logo img {
   height: 55px;
 }
-
 .logo span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff2e2e;
+  color: #fff;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
-/* Navigation links */
+/* Center Links (desktop) */
+.center-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
   gap: 30px;
-  transition: all 0.3s ease-in-out;
 }
-
 .nav-links a {
   text-decoration: none;
   color: #fff;
@@ -65,7 +65,6 @@
   position: relative;
   padding: 6px 4px;
 }
-
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -76,23 +75,59 @@
   background-color: #ff2e2e;
   transition: width 0.3s ease;
 }
-
 .nav-links a:hover::after {
   width: 100%;
 }
-
 .nav-links a:hover {
   color: #ff2e2e;
 }
 
-/* Hamburger menu */
+/* Right Actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Glassy Login Button */
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.login-btn:hover {
+  border-color: #ff2e2e;
+  color: #ff2e2e;
+}
+.login-btn.paused {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.dino-wrap,
+.dino-wrap * {
+  pointer-events: none;
+}
+.login-text {
+  font-weight: 500;
+}
+
+/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
 }
-
 .hamburger .bar {
   height: 3px;
   width: 24px;
@@ -100,41 +135,45 @@
   border-radius: 2px;
   transition: all 0.3s ease;
 }
-
-/* Hamburger open animation */
 .hamburger.open .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(4px, 4px);
 }
-
 .hamburger.open .bar:nth-child(2) {
   opacity: 0;
 }
-
 .hamburger.open .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(4px, -4px);
 }
 
-/* Mobile Styles */
+/* Mobile Menu */
+.mobile-nav {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: #0a0a0a;
-    flex-direction: column;
-    padding: 20px;
-    width: 220px;
-    border-left: 1px solid #222;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 999;
+  .center-links {
+    display: none;
   }
-
-  .nav-links.open {
-    transform: translateX(0%);
-  }
-
   .hamburger {
     display: flex;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  .mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .mobile-nav a:hover {
+    color: #ff2e2e;
   }
 }

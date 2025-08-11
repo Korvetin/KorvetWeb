@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './login.css';
+import './Login.css';
 import { FaGoogle, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
